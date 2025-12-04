@@ -25,7 +25,7 @@ console.log(result);
 // Answer: To convert the movie length to minutes, after subtract the remaining seconds
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
-// Answer: It declares the total time length of the movie in the format: hours:minutes:seconds. We can call it movieTimeLength
+// Answer: It declares the total time length of the movie in the format: hours:minutes:seconds as a string. We can call it movieTimeLength
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 // Answer: It can't function well with negative integer (eg: -10), float numbers (eg: 10.1)
