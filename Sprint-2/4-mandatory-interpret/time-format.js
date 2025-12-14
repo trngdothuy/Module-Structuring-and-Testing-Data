@@ -34,7 +34,7 @@ formatTimeDisplay(61)
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
-// Answer: 0, because the 1s function is pad(remainingSeconds), so the parameter num equals to remainingSeconds, which is 1
+// Answer: 1, because the last pad function is pad(remainingSeconds), so the parameter num equals to remainingSeconds, which is 1
 
 // e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
