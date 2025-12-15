@@ -44,14 +44,16 @@ assertEquals(fiveofHearts, 5);
 // Given a card with a rank of "10," "J," "Q," or "K",
 // When the function is called with such a card,
 // Then it should return the value 10, as these cards are worth 10 points each in blackjack.
-const jofHearts = getCardValue("J♥");
-assertEquals(jofHearts, 10);
+const jOfHearts = getCardValue("J♥");
+assertEquals(jOfHearts, 10);
 
 // Handle Ace (A):
 // Given a card with a rank of "A",
 // When the function is called with an Ace,
 // Then it should, by default, assume the Ace is worth 11 points, which is a common rule in blackjack.
 // Note: I don't understand what is the difference with the case in line 28?
+const aceofHearts = getCardValue("A♥");
+assertEquals(aceofHearts, 11);
 
 // Handle Invalid Cards:
 // Given a card with an invalid rank (neither a number nor a recognized face card),
