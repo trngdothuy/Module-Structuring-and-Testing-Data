@@ -20,6 +20,13 @@ console.log(find("code your future", "z"));
 // Pay particular attention to the following:
 
 // a) How the index variable updates during the call to find
+// Answer: Index will increase by 1 every time the while loop restarts
+
 // b) What is the if statement used to check
+// Answer: if (str[index] === char) is used to check if the letter at the index point of the string is strictly equal to char
+
 // c) Why is index++ being used?
+// Answer: To increase index by 1 every time the loop restarts, until when it reaches the length of the string then it stops (the condition)
+
 // d) What is the condition index < str.length used for?
+// Answer: To check if the index reaches its highest value, which means it's the last character. Otherwise, the while loop continues if the condition is not satisfied.
