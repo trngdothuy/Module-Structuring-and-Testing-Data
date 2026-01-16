@@ -18,3 +18,8 @@ test("should return true for a negative fraction", () => {
 test("should return false for an equal numerator and denominator fraction", () => {
   expect(isProperFraction(3, 3)).toEqual(false)
 });
+
+// Case 5: Deminator = 0:
+test("should return 'Dominator should not be 0' when denominator = 0", () => {
+  expect(isProperFraction(3, 0)).toEqual("Dominator should not be 0")
+})
