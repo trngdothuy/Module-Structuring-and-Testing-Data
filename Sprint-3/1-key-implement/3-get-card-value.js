@@ -8,7 +8,7 @@
 // write one test at a time, and make it pass, build your solution up methodically
 // just make one change at a time -- don't rush -- programmers are deep and careful thinkers
 function getCardValue(card) {
-    rank = card.substring(0, card.length - 1)
+    const rank = card.substring(0, card.length - 1)
     if (rank === "A") return 11;
     if (rank >= 2 && rank <= 9) return Number(rank);
     if (["10", "J", "Q", "K"].includes(rank)) return 10;
