@@ -1,7 +1,7 @@
 function getOrdinalNumber(num) {
     const lastDigit = num.toString().slice(-1)
     const twoLastDigits = num.toString().slice(-2)
-    console.log(twoLastDigits)
+    // console.log(twoLastDigits)
     if (lastDigit == 1 && twoLastDigits != 11) {
         return `${num}st`;
     }

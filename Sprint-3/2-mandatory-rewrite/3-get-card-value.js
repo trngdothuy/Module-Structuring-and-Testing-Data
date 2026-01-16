@@ -4,6 +4,6 @@ function getCardValue(card) {
     if (rank === "A") return 11;
     if (rank >= 2 && rank <= 9) return Number(rank);
     if (["10", "J", "Q", "K"].includes(rank)) return 10;
-    else return "Invalid card rank."
+    throw new Error("Invalid card rank.");
 }
 module.exports = getCardValue;

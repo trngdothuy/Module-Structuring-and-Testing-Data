@@ -25,6 +25,7 @@ test("should return 11 for Ace (A♥)", () => {
 
 // Case 5: Handle Invalid Cards:
 test("should return invalid for invalid cards (20♥)", () => {
-    const invalidCase = getCardValue("20♥");
-    expect(invalidCase).toEqual("Invalid card rank."); 
+    // const invalidCase = getCardValue("20♥");
+    // toThrow only works with function, not returned value
+    expect(() => getCardValue("20♥")).toThrow("Invalid card rank."); 
 })
