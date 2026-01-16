@@ -12,7 +12,7 @@ function getCardValue(card) {
     if (rank === "A") return 11;
     if (rank >= 2 && rank <= 9) return Number(rank);
     if (["10", "J", "Q", "K"].includes(rank)) return 10;
-    else {throw new Error("Invalid card rank.")};
+    return new Error("Invalid card rank.");
 }
 
 // You need to write assertions for your function to check it works in different cases
