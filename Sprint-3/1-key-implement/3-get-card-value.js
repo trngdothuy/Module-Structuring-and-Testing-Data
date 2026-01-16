@@ -12,7 +12,7 @@ function getCardValue(card) {
     if (rank === "A") return 11;
     if (rank >= 2 && rank <= 9) return Number(rank);
     if (["10", "J", "Q", "K"].includes(rank)) return 10;
-    else return "Invalid card rank."
+    else {throw new Error("Invalid card rank.")};
 }
 
 // You need to write assertions for your function to check it works in different cases
@@ -60,4 +60,4 @@ assertEquals(aceofHearts, 11);
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
 const invalidCase = getCardValue("20♥");
-assertEquals(invalidCase, "Invalid card rank.");
+assertEquals(invalidCase, Error("Invalid card rank."));
