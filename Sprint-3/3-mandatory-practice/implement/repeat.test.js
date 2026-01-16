@@ -43,5 +43,5 @@ test("should return empty output when count = 0", () => {
 test("should return error message when count < 0", () => {
     const str = "hello";
     const count = -1;
-    expect(repeat(str, count)).toEqual("Error: Count value can't be negative")
+    expect(() => repeat(str, count)).toThrow("Count value can't be negative")
 })
